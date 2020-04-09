@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gcgenerator.controllers.MainController">
+   <right>
+      <AnchorPane maxWidth="200.0" minWidth="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <GridPane AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ComboBox fx:id="textSizeComboBox" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Size" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="textFontComboBox" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Font" GridPane.rowIndex="2" />
+                  <TextField fx:id="bedMarginX" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" promptText="X margin" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets right="25.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="bedSizeY" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" promptText="Y size" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="offsetY" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Y" GridPane.rowIndex="9" />
+                  <TextField fx:id="offsetX" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="X" GridPane.rowIndex="7" />
+                  <Label text="Bed properties" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Offset X" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Text" GridPane.halignment="LEFT">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Pen position up" GridPane.halignment="LEFT" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="penZup" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Z up" GridPane.rowIndex="11" />
+                  <TextField fx:id="penZdown" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Z down" GridPane.rowIndex="13" />
+                  <Label text="Pen position down" GridPane.halignment="LEFT" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Offset Y" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Writing speed" GridPane.halignment="LEFT" GridPane.rowIndex="16">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="writingSpeed" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Writing speed" GridPane.rowIndex="17" />
+                  <Label text="Displacement speed" GridPane.halignment="LEFT" GridPane.rowIndex="14">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="displacementSpeed" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" promptText="Displacement speed" GridPane.rowIndex="15" />
+                  <TextField fx:id="bedSizeX" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" promptText="X size" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="bedMarginY" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" promptText="Y margin" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets right="25.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="menuFile" mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="menuFileNew" mnemonicParsing="false" onAction="#menuFileNew_actionPerformed" text="New" />
+                  <MenuItem fx:id="menuFileOpen" mnemonicParsing="false" onAction="#menuFileOpen_actionPerformed" text="Open" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="menuFileCloseAllTabs" mnemonicParsing="false" onAction="#menuFileCloseAllTabs_actionPerformed" text="Close all Tabs" />
+               </items></Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="menuHelpAbout" mnemonicParsing="false" onAction="#menuHelpAbout_actionPerformed" text="About" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ButtonBar buttonMinWidth="150.0" maxHeight="60.0" minHeight="60.0" prefHeight="60.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="generateGCodeButton" mnemonicParsing="false" onAction="#generateGCodeButton_actionPerformed" text="Generate G Code" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="25.0" top="10.0" />
+         </padding>
+      </ButtonBar>
+   </bottom>
+   <center>
+      <TabPane fx:id="documentTabPane" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

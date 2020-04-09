@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gcgenerator.Main">
+   <children>
+      <BorderPane maxHeight="150.0" maxWidth="400.0" minHeight="150.0" minWidth="400.0" pickOnBounds="false" prefHeight="150.0" prefWidth="400.0">
+         <top>
+            <AnchorPane maxHeight="50.0" maxWidth="400.0" minHeight="50.0" minWidth="400.0" prefHeight="50.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="G-Code Generator 1.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane maxHeight="100.0" maxWidth="400.0" minHeight="100.0" minWidth="400.0" prefHeight="100.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A simplistic approach to print text using a 3D printer. Pleaase visit Github for more info :" wrappingWidth="380.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <Hyperlink layoutX="10.0" layoutY="52.0" onAction="#openBrowser" text="https://github.com/hbenniou" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="55.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
